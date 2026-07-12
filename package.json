@@ -1,0 +1,21 @@
+{
+  "name": "devops-onboarding-activity",
+  "version": "1.0.0",
+  "description": "A small Node.js app intentionally missing setup instructions for a DevOps L&D activity.",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "build": "node scripts/build-assets.js",
+    "migrate": "node scripts/migrate.js",
+    "seed": "node scripts/seed.js",
+    "clean": "rm -rf public/build data/app-state.json logs"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
